@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATM Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="atm-container">
+    <h1>ATM Simulator</h1>
+    <div class="atm-screen">
+      <p id="message">Welcome! Please enter your PIN:</p>
+      <input type="password" id="pin" maxlength="4" placeholder="****">
+      <button onclick="validatePin()">Submit</button>
+    </div>
+    <div class="atm-options" style="display:none;">
+      <p>Choose an option:</p>
+      <button onclick="checkBalance()">Check Balance</button>
+      <button onclick="withdraw()">Withdraw</button>
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="exit()">Exit</button>
+    </div>
+    <div class="atm-actions" style="display:none;">
+      <input type="number" id="amount" placeholder="Enter amount">
+      <button onclick="confirmTransaction()">Confirm</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
